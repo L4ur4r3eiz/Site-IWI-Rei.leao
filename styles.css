@@ -152,6 +152,12 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+
+.hex-grid :hover {
+    color: rgb(230, 138, 0);
+    transform: translateY(-5px);
+}
+
 footer {
     text-align: center;
     color: rgb(14, 14, 14);
@@ -160,6 +166,33 @@ footer {
     border: none;
     padding: 1%;
 }
+
+#banner .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#banner .item{
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+    cursor: pointer;
+}
+
+#banner .container :hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
 
 @media (max-width:675px){
 
