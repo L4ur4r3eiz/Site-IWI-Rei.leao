@@ -21,12 +21,15 @@ header {
    padding: 15px 15px 15px 15px;
    width: 100%;
   
+  
+  
 }
 
 header .container{
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    position: relative;
 }
 
 .logo {
@@ -288,17 +291,70 @@ footer {
 
 }
 
+.modal-content h3{
+    text-align: center;
+    padding: 7px;
+}
+
 .close-btn{
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
     background: #d6834c;
-   color: #ddd;
-   text-decoration: none;
-   border-radius: 6px;
-   cursor: pointer;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 30px auto;  /*deixei o botão completo na modal*/ 
+    
 }
 
+.centro{
+    text-align: center;
+}
+
+
+.fotos{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    overflow-x: scroll;
+    gap: 10px;
+
+}
+
+.fotos img{
+    width: 200px;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9 
+{
+    background-color: #ebe2e2de;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.356);
+
+
+}
+
+.textoperso{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    color: #2c2a2a;
+}
+
+.galeria h1{
+    text-align: center;
+    color: #3b3838;
+
+}
+
+.galeria{
+    background-color:aliceblue ;
+}
 
 @media (max-width:675px){
 
@@ -307,6 +363,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+   
    
    }
 
