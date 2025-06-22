@@ -433,7 +433,8 @@ footer {
 }
 
 footer img {
-    width: 100px;
+    width: 180px;
+    margin: 0 10px;
 }
 
 .reservation {
@@ -444,13 +445,68 @@ footer img {
     margin: 0;
 }
 
+.imggith{
+    width: 250px;
+    padding: 27px;
+  
+
+}
+.imginsta{
+    width: 320px;
+}
+
 .footertext{
     padding: 20px;
-    font-family: "Funnel Display", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
 }
+
+
+
+.grade{
+    margin: 20px;
+}
+
+.gradefoto{
+    display: flex;
+      flex-wrap: wrap; 
+      gap: 10px; 
+      max-width: 100%; 
+      justify-content: space-between;
+    
+}
+.grades{
+    background-color: #ebe2e2de;
+    padding: 20px;
+}
+
+.grade img{
+    width: 200px;
+    height: 300px;
+    display: flex;
+}
+ .grade h1{
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:675px){
@@ -494,6 +550,7 @@ footer img {
    }
  
 }
+
 
 
 
