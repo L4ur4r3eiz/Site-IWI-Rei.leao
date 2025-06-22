@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 
 }
 .container{
@@ -109,6 +113,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 10;
     margin-top: 140px;
+    min-width: 100%;
 }
 
 
@@ -488,24 +493,11 @@ footer img {
  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.grades:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
 
 
 
