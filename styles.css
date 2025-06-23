@@ -288,7 +288,7 @@ nav ul li a:hover {
 }
 
 .modal-content{
-    max-height: 90vh;
+    max-height: 60vh;
     overflow-y: auto;
     background: white;
     padding: 30px;
@@ -519,6 +519,9 @@ footer img {
    
    }
 
+
+   
+
     .logo {
      margin-left: 0;
      margin-top: 2px;
@@ -537,12 +540,15 @@ footer img {
    }
 
    .modal{
-    margin-top: 0;
+    margin-top: 150px;
    }
 
    .modal-content{
     max-height: 60vh;
    }
+
+
+
  
 }
 
