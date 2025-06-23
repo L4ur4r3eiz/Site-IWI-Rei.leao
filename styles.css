@@ -5,9 +5,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Funnel Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 
 }
 .container{
@@ -109,13 +109,16 @@ nav ul li a:hover {
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     text-align: center;
     font-size: 24px;
-    color: #d35400;
+    color: #f0a879;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 10;
     margin-top: 140px;
     min-width: 100%;
 }
 
+.banner h1{
+    margin: 15px;
+}
 
 #sobre {
     padding: 35px;
