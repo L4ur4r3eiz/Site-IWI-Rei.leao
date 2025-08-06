@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,38 +9,39 @@
     font-style: normal;
 
 }
-.container{
+
+.container {
     margin: auto;
     padding: 5px;
 }
 
 body {
     margin: 0;
-    
-   
-    
+
+
+
 }
 
 
 header {
-   background-color: bisque;
-   color: black;
-   padding: 15px 15px 15px 15px;
-   width: 100%;
-   z-index: 10;
-   position: fixed;
-   top: 0;
-   
-   
-  
-  
-  
+    background-color: bisque;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+
+
+
+
+
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 .banner {
     background: url(img/banner1.jpeg) no-repeat center/cover;
-    height:700px;
+    height: 700px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ nav ul li a:hover {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "MORF" 0;
+        "MORF" 0;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     text-align: center;
     font-size: 24px;
@@ -116,7 +116,33 @@ nav ul li a:hover {
     min-width: 100%;
 }
 
-.banner h1{
+.bannercontato {
+    background: url(img/img/banner1.jpeg) no-repeat center/cover;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 0;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-align: center;
+    font-size: 24px;
+    color: #f0a879;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    margin-top: 140px;
+    min-width: 100%;
+}
+
+
+.banner h1 {
     margin: 15px;
 }
 
@@ -190,7 +216,7 @@ nav ul li a:hover {
 
 
 
-#banner .container{
+#banner .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -199,7 +225,7 @@ nav ul li a:hover {
 }
 
 
-#banner .item{
+#banner .item {
     background-color: aliceblue;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -210,7 +236,7 @@ nav ul li a:hover {
 }
 
 
-#banner .item:hover{
+#banner .item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 
@@ -218,7 +244,7 @@ nav ul li a:hover {
 }
 
 
-#banner .item:active{
+#banner .item:active {
     transform: scale(0.98);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 
@@ -230,7 +256,7 @@ nav ul li a:hover {
 
 
 
-#banner .item p{
+#banner .item p {
     margin-top: 15px;
     font-size: 0.95em;
     color: #000000;
@@ -239,7 +265,7 @@ nav ul li a:hover {
 }
 
 
-#banner .imagem img{
+#banner .imagem img {
     width: 100%;
     max-width: 150px;
     height: auto;
@@ -252,7 +278,7 @@ nav ul li a:hover {
     background: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(21, 1, 1, 0.544); 
+    box-shadow: 0 4px 10px rgba(21, 1, 1, 0.544);
     margin: auto;
     text-align: center;
 
@@ -283,11 +309,11 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.modal:target{
+.modal:target {
     display: flex;
 }
 
-.modal-content{
+.modal-content {
     max-height: 60vh;
     overflow-y: auto;
     background: white;
@@ -296,17 +322,17 @@ nav ul li a:hover {
     max-width: 400px;
     text-align: center;
     max-width: 600px;
-    text-align: justify; 
+    text-align: justify;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 
 }
 
-.modal-content h3{
+.modal-content h3 {
     text-align: center;
     padding: 7px;
 }
 
-.close-btn{
+.close-btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 15px;
@@ -318,16 +344,16 @@ nav ul li a:hover {
     text-align: center;
     align-items: center;
     display: block;
-    margin: 30px auto;  
-    
+    margin: 30px auto;
+
 }
 
-.centro{
+.centro {
     text-align: center;
 }
 
 
-.fotos{
+.fotos {
     display: flex;
     justify-content: space-between;
     padding: 40px;
@@ -336,13 +362,20 @@ nav ul li a:hover {
 
 }
 
-.fotos img{
+.fotos img {
     width: 250px;
     height: 350px;
 }
 
-.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9 
-{
+.foto1,
+.foto2,
+.foto3,
+.foto4,
+.foto5,
+.foto6,
+.foto7,
+.foto8,
+.foto9 {
     background-color: #ebe2e2de;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.356);
@@ -350,25 +383,25 @@ nav ul li a:hover {
 
 }
 
-.textoperso{
+.textoperso {
     text-align: center;
     background-color: aliceblue;
     padding: 20px;
     color: #2c2a2a;
 }
 
-.galeria h1{
+.galeria h1 {
     text-align: center;
     color: #3b3838;
 
 }
 
-.galeria{
-    background-color:aliceblue ;
+.galeria {
+    background-color: aliceblue;
     margin: 20px;
 }
 
-.foto img{
+.foto img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -398,6 +431,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .foto5:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -409,6 +443,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .foto7:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -427,7 +462,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.item p{
+.item p {
     text-align: justify;
 }
 
@@ -437,7 +472,7 @@ footer {
     background-color: rgb(58, 55, 52);
     flex-wrap: wrap;
     border: none;
-    
+
 }
 
 footer img {
@@ -453,47 +488,50 @@ footer img {
     margin: 0;
 }
 
-.imggith{
+.imggith {
     width: 250px;
     padding: 27px;
-  
+
 
 }
-.imginsta{
+
+.imginsta {
     width: 320px;
 }
 
-.footertext{
+.footertext {
     padding: 20px;
-    
+
 }
 
 
-.grade{
+.grade {
     margin: 20px;
 }
 
-.gradefoto{
+.gradefoto {
     display: flex;
-      flex-wrap: wrap; 
-      gap: 10px; 
-      max-width: 100%; 
-      justify-content: space-between;
-    
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    justify-content: space-between;
+
 }
-.grades{
+
+.grades {
     background-color: #ebe2e2de;
     padding: 20px;
 }
 
-.grade img{
+.grade img {
     width: 200px;
     height: 300px;
     display: flex;
 }
- .grade h1{
+
+.grade h1 {
     text-align: center;
- }
+}
 
 
 .grades:hover {
@@ -502,57 +540,104 @@ footer img {
     cursor: pointer;
 }
 
+.formulario {
+    background-color: #ebe2e2de;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
 
-@media (max-width:675px){
+}
 
-  
-    .banner{
+.formulario button{
+    display: inline-block;
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    padding: 10px 15px;
+    background: #d6834c;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #c46d2a;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input:hover{
+      transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width:675px) {
+
+
+    .banner {
         margin-top: 300px;
     }
 
-   header .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-   
-   }
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
 
-   
-
-    .logo {
-     margin-left: 0;
-     margin-top: 2px;
     }
 
 
-   nav ul{
-    margin-top: 5px;
-    flex-direction: column;
-   }
 
 
-   .sobre-container{
-    flex-direction: column;
-    align-items: center;
-   }
-
-   .modal{
-    margin-top: 150px;
-   }
-
-   .modal-content{
-    max-height: 60vh;
-   }
+    .logo {
+        margin-left: 0;
+        margin-top: 2px;
+    }
 
 
+    nav ul {
+        margin-top: 5px;
+        flex-direction: column;
+    }
 
- 
+
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal {
+        margin-top: 150px;
+    }
+
+    .modal-content {
+        max-height: 60vh;
+    }
+
+
+
+
 }
-
-
-
-
-
