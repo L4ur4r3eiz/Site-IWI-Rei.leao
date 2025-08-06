@@ -45,53 +45,82 @@
         <h1>VOCÊ REALMENTE CONHECE A HISTORIA DESSE CLASSICO DA DISNEY?</h1>
     </section>
 
-    <div class="formulario">
+    <main>
+        <section id="Contato">
+            <div class="form">
+                <h1>Responda as Perguntas a seguir</h1>
+                <form class="Formulario-perguntas" action="https://formsubmit.co/pequenalaur4@gmail.com">
+                    <div class="grupo-form">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome...">
+                      </div>
+                </form>
 
-        <label for="text">O que você acha desse filme? :</label>
-        <input type="text" id="text" placeholder="Digite algo...">
+                <div class="grupo-form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email para entrarmos em contato">
+                  </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="exemplo@email.com">
+                  
+                  <div class="grupo-form">
+                    <label for="idade">Qual a sua idade:</label>
+                    <input type="number" id="idade" name="idade" min="10" max="120">
+                    <br>
+                    <br>
+                    <h1>Sobre os Filmes</h1>
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password">
+                    <div class="grupo-form">
+                        <label for="data">Quando lançou o pimeiro filme:</label>
+                        <input type="date" id="data" name="data">
+                      </div>
 
-        <label for="number">Qual a nota que você daria para essa franquia:</label>
-        <input type="number" id="number" min="0" max="100">
+                      <div class="grupo-form">
+                        <label for="area">Qual Filme você mais gosta?</label>
+                        <select id="area" name="area">
+                            <option value="ml">O Rei leão</option>
+                            <option value="cv">Rei leão 2</option>
+                            <option value="pln">O Rei Leão 3: Hakuna Matata</option>
+                            <option value="pln">O Rei Leão em live-action</option>
+                            <option value="pln">Mufasa: O Rei Leão</option>
+                        </select>
+                    </div>
 
-        <label for="date">Quando foi lançado o primeiro filme:</label>
-        <input type="date" id="date">
+                    <div class="grupo-form">
+                        <label>Quanto você gosta desse filme:</label>
+                        <input type="range" min="0" max="100" name="interesse">
+                      </div>
 
-        <label for="color">Cor:</label>
-        <input type="color" id="color">
+                      <div class="grupo-form">
+                        <label>Gênero:</label>
+                        <input type="radio" name="genero" value="feminino"> Feminino
+                        <input type="radio" name="genero" value="masculino"> Masculino
+                        <input type="radio" name="genero" value="outro"> Outro
+                      </div>
 
-        <label for="file">Arquivo:</label>
-        <input type="file" id="file">
+                      <div class="grupo-form">
+                        <label>Quais filmes você já assistiu?</label>
+                        <input type="checkbox" name="uso[]" value="chatgpt"> O Rei leão
+                        <input type="checkbox" name="uso[]" value="dalle"> Rei leão 2
+                        <input type="checkbox" name="uso[]" value="midjourney"> O Rei Leão 3: Hakuna Matata
+                        <input type="checkbox" name="uso[]" value="bard"> O Rei Leão em live-action
+                        <input type="checkbox" name="uso[]" value="bard"> O Rei Leão em live-action
+                      </div>
+                            
+                      <div class="grupo-form">
+                        <label for="cor">Escolha sua cor preferida de interface:</label>
+                        <input type="color" id="cor" name="cor">
+                    </div>
 
-        <label for="checkbox">Aceita os termos?</label>
-        <input type="checkbox" id="checkbox">
-        <input type="checkbox" id="checkbox">
-        <input type="checkbox" id="checkbox">
-        <input type="checkbox" id="checkbox">
-
-        <label for="radio">Opção:</label>
-        <input type="radio" name="opcao" id="radio">
-        <input type="radio" name="opcao" id="radio">
-        <input type="radio" name="opcao" id="radio">
-        <input type="radio" name="opcao" id="radio">
-
-        <label for="range">Volume:</label>
-        <input type="range" id="range" min="0" max="100">
-
-        <label for="url">URL:</label>
-        <input type="url" id="url" placeholder="https://site.com">
-
-        <label for="tel">Telefone:</label>
-        <input type="tel" id="tel" placeholder="(99) 99999-9999">
+                    <div class="grupo-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea >
+                      </div>
 
 
-        <button>Enviar</button>
-    </div>
+            </div>
+        </section>
+    </main>
+    
 
 
     <footer id="footer" class="footer">

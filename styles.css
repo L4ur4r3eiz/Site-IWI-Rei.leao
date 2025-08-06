@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 .bannercontato {
-    background: url(img/img/banner1.jpeg) no-repeat center/cover;
+    background: url(img/banner1.jpeg) no-repeat center/cover;
     height: 700px;
     width: 100%;
     display: flex;
@@ -540,7 +540,7 @@ footer img {
     cursor: pointer;
 }
 
-.formulario {
+.form{
     background-color: #ebe2e2de;
     padding: 25px;
     border-radius: 10px;
@@ -550,6 +550,10 @@ footer img {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
 
+}
+
+.form h1{
+    text-align: center;
 }
 
 .formulario button{
