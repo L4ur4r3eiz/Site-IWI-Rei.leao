@@ -49,14 +49,13 @@
         <section id="Contato">
             <div class="form">
                 <h1>Responda as Perguntas a seguir</h1>
-                <form class="Formulario-perguntas" action="https://formsubmit.co/pequenalaur4@gmail.com">
+                <form class="Formulario-perguntas" action="https://formsubmit.co/pequenalaur4@gmail.com" method="POST">
                     <div class="grupo-form">
                         <label for="nome">Nome completo:</label>
                         <input type="text" id="nome" name="nome" required placeholder="Digite seu nome...">
                     </div>
-                </form>
 
-                <div class="grupo-form">
+                    <div class="grupo-form">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" required
                         placeholder="Digite seu email para entrarmos em contato....">
@@ -128,13 +127,16 @@
                         <button type="submit" class="botaocontato">Enviar</button>
                         <input type="hidden" name="_captcha" value="true">
                         <input type="hidden" name="_next"
-                            value="https://cintiapinho.github.io/meuprimeirosite_1C_TurmaB_2025/contato.html ">
-                        <input type="hidden" name="_next"
-                            value="https://cintiapinho.github.io/meuprimeirosite_1C_TurmaB_2025/enviadosucesso.html ">
+                            value="https://cintiapinho.github.io/meuprimeirosite_1C_TurmaB_2025/contato.html 
+                            " href="enviadosucesso.html">
+                         
                     
 
 
                 </div>
+                </form>
+
+                
         </section>
     </main>
 
