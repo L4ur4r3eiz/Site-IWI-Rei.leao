@@ -622,19 +622,49 @@ input {
     border-radius: 5px;
 }
 
-body.paginamensagem {
+main.enviadosucesso {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+
 }
 
-body.paginamensagem main {
+.textenviados{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 10%;
+
+}
+
+
+main.enviadosucesso {
   flex: 1;
 }
 
-.mensagem{
-  margin-top: 10%;
-  background-color: aquamarine;
+.enviadosucesso {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 10px ;
+    width: 700px;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(21, 1, 1, 0.544);
+}
+
+.textenviados{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
 }
 
 @media (max-width:675px) {
