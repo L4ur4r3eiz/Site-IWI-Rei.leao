@@ -710,6 +710,12 @@ main.enviadosucesso {
         max-height: 60vh;
     }
 
+    .video {
+     
+    width: 200px;
+    
+    }
+
 
     .form{
     background-color: #ebe2e2de;
