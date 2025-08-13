@@ -725,9 +725,22 @@ main.enviadosucesso {
     margin: 20px;
   }
 
+     .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .textenviados{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 40vh;
+
 }
 
-@media (max-width:736px) {
+}
+
+@media (max-width:800px) {
     .video {
         width: 100%;
         height: auto;
