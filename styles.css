@@ -710,11 +710,7 @@ main.enviadosucesso {
         max-height: 60vh;
     }
 
-    .video {
-     
-    width: 200px;
     
-    }
 
 
     .form{
@@ -730,3 +726,21 @@ main.enviadosucesso {
   }
 
 }
+
+@media (max-width:736px) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .textenviados{
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 40vh;
+
+}
+
+
+}
+
