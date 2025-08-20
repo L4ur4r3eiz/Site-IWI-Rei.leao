@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei leão</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo-header-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Funnel+Display:wght@700&family=Lavishly+Yours&family=Pinyon+Script&family=Roboto+Condensed:ital,wght@0,100;1,100&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== ESTILO DO JOGO ===== */
+        .game-area {
+            position: relative;
+            width: 90%;
+            height: 700px;
+            background: url("img/pedradorei.jpg") no-repeat center;
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 15px;
+            margin: 30px auto;
+        }
+
+        #simba {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12%;
+            max-width: 80px;
+        }
+
+        #scar {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            width: 13%;
+            max-width: 200px;
+        }
+
+        #mensagem {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: white;
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .game-area {
+                height: 350px;
+            }
+            #mensagem {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img id="logo" class="logo" src="img/logo-header-removebg-preview.png"
+                        alt="Simbolo do rei leão" width="80px" height="80px"></a>
+            </div>
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#header">INICIO</a></li>
+                        <li><a href="index.html#sobre">SINOPSE</a></li>
+                        <li><a href="index.html#galeria">PERSONAGENS</a></li>
+                        <li><a href="index.html#filmes">FILMES</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="bannercontato">
+        <h1>VOCÊ REALMENTE CONHECE A HISTORIA DESSE CLASSICO DA DISNEY?</h1>
+    </section>
+
+    <main>
+        <!-- ÁREA DO JOGO -->
+        <h2 style="text-align:center; margin-top:20px;">🎮 Fuja do Scar!</h2>
+        <div class="game-area">
+            <img id="simba" src="img/SIMBA_SITE-650x650-removebg-preview.png" alt="Simba">
+            <img id="scar" src="img/scartransp.png" alt="Scar">
+            <div id="mensagem">💀 Game Over! O Scar pegou você! 💀</div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footertext">
+            <h3>CONTATO</h3>
+            <h4>Tel: (11) 93733-0641</h4>
+            <h4>Feito exclusivamente por Laura Reis</h4>
+        </div>
+
+        <div class="footerimg">
+            <a href="https://www.instagram.com/l4ur4_r3is/"><img class="imginsta" src="img/inta2.png"
+                    alt="logo instagram" width="100px"></a>
+            <a href="https://github.com/L4ur4r3eiz"><img class="imggith" src="img/gith2 (1).png" alt="logo github"></a>
+        </div>
+
+        <div class="reservation">
+            <h3> Todos os direitos reservados © 2025</h3>
+        </div>
+    </footer>
+
+    <script>
+        const simba = document.getElementById("simba");
+        const scar = document.getElementById("scar");
+        const mensagem = document.getElementById("mensagem");
+
+        let x = 200;
+        let y = 400;
+
+        // mover Simba
+        document.addEventListener("keydown", (e) => {
+            const gameArea = document.querySelector(".game-area");
+            const passo = 80;
+            if (e.key === "ArrowUp") y -= passo;
+            if (e.key === "ArrowDown") y += passo;
+            if (e.key === "ArrowLeft") x -= passo;
+            if (e.key === "ArrowRight") x += passo;
+
+            if (x < 0) x = 0;
+            if (y < 0) y = 0;
+            if (x > gameArea.offsetWidth - simba.width)
+                x = gameArea.offsetWidth - simba.width;
+            if (y > gameArea.offsetHeight - simba.height)
+                y = gameArea.offsetHeight - simba.height;
+
+            simba.style.left = x + "px";
+            simba.style.top = y + "px";
+
+            checarColisao();
+        });
+
+        // movimentar Scar aleatoriamente
+        function moverScar() {
+            const gameArea = document.querySelector(".game-area");
+            const maxX = gameArea.offsetWidth - scar.width;
+            const maxY = gameArea.offsetHeight - scar.height;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            scar.style.left = randomX + "px";
+            scar.style.top = randomY + "px";
+
+            checarColisao();
+        }
+
+        // checar colisão Simba x Scar
+        function checarColisao() {
+            const simbaRect = simba.getBoundingClientRect();
+            const scarRect = scar.getBoundingClientRect();
+
+            if (
+                simbaRect.left < scarRect.right &&
+                simbaRect.right > scarRect.left &&
+                simbaRect.top < scarRect.bottom &&
+                simbaRect.bottom > scarRect.top
+            ) {
+                mensagem.style.display = "block";
+                clearInterval(intervaloScar); // parar jogo
+            }
+        }
+
+        // Scar se move a cada 1,5 segundos
+        const intervaloScar = setInterval(moverScar, 1000);
+    </script>
+</body>
+</html>
