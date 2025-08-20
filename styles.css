@@ -515,7 +515,7 @@ footer img {
     gap: 10px;
     max-width: 100%;
     justify-content: space-between;
-
+    margin: 50px;
 }
 
 .grades {
@@ -586,7 +586,7 @@ footer img {
   }
 
 
-    /* botão da area de contato*/
+    
     .botaocontato{
     display: inline-block;
     margin-top: 15px;
@@ -667,12 +667,17 @@ main.enviadosucesso {
     padding: 20px;
 }
 
-
+.tabela h1{
+    text-align: center;
+    color: #3b3838;
+    margin-top: 20px;
+}
 table {
-    margin: 30px;
+    margin: 40px;
+    
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
   }
   
   td, th {
@@ -682,12 +687,23 @@ table {
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: bisque;
   }
 
-  table {
+  table th{
+    background-color: #d6834c;
+    color: white;
+    padding: 10px;
+    text-align: center;
 
   }
+
+    .tabela {
+    max-width: 100%;  
+    overflow-x: auto;  
+    }
+
+
 
 @media (max-width:675px) {
 
@@ -777,5 +793,5 @@ table {
 }
 
 
-}
 
+}
