@@ -741,17 +741,22 @@ table {
     }
 
     .modal {
-        margin-top: 150px;
+        margin-top: 190px;
     }
 
     .modal-content {
-        max-height: 60vh;
+        max-height: 55vh;
     }
 
     .tabela h1{
         text-align: center;
     }
 
+    .form input[type="checkbox"]{
+        width: auto;
+        height: auto;
+        margin-right: 0.1rem;
+    }
     .form{
     background-color: #ebe2e2de;
     padding: 30px;
@@ -763,6 +768,9 @@ table {
     font-size: 12px;
     margin: 20px;
   }
+
+    
+
 
      .video {
         width: 100%;
